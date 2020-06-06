@@ -1,0 +1,24 @@
+# ---------- set port ----------#
+server:
+  port: 8080
+# ---------- set thymeleaf for parse html ----------#
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+# ---------- set SQL database ----------#
+  datasource:
+    url: jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: lzh12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# ---------- set spring JPA --------------#
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
